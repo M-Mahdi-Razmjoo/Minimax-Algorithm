@@ -5,20 +5,16 @@ This project implements the Minimax algorithm, a fundamental strategy in game th
 The Minimax algorithm is a recursive approach that simulates all possible moves in a game to help a player make the best possible decision, taking into account the opponent’s optimal strategy. The algorithm's purpose is to maximize the player's minimum gain (or minimize their maximum loss), which is especially useful in adversarial games where each player's gain is the other’s loss. The algorithm is particularly effective in games like Tic-Tac-Toe, Chess, and Checkers, where each player aims to outwit the opponent.
 
 ## Key Concepts
-** 1-Game Tree: **
-The Minimax algorithm builds a tree structure of all possible moves from the current game state. Each node represents a game state resulting from a move, and edges represent the transition from one state to another.
+** 1-Game Tree: ** The Minimax algorithm builds a tree structure of all possible moves from the current game state. Each node represents a game state resulting from a move, and edges represent the transition from one state to another.
 
-** 2-Maximizing Player vs. Minimizing Player: **
-Maximizing Player: The player for whom the algorithm is trying to maximize the score. This player selects the move with the highest possible outcome. Minimizing Player: The opponent, whose strategy is to minimize the outcome of the maximizing player. This player picks the move that yields the lowest score for the maximizing player.
+** 2-Maximizing Player vs. Minimizing Player: ** Maximizing Player: The player for whom the algorithm is trying to maximize the score. This player selects the move with the highest possible outcome. Minimizing Player: The opponent, whose strategy is to minimize the outcome of the maximizing player. This player picks the move that yields the lowest score for the maximizing player.
 
-** 3-Scoring **
-Each terminal state (a state where the game ends, such as a win, loss, or draw) is assigned a score:
+** 3-Scoring ** Each terminal state (a state where the game ends, such as a win, loss, or draw) is assigned a score:
 -Positive score (e.g., +1) if the maximizing player wins
 -Negative score (e.g., -1) if the minimizing player wins
 -Zero (0) for a draw
 
-** 4-Recursive Exploration:**
-The algorithm recursively explores each possible move and its resulting game states. By backtracking, it propagates the scores up the tree, allowing the initial game state to be evaluated based on potential future moves.
+** 4-Recursive Exploration:** The algorithm recursively explores each possible move and its resulting game states. By backtracking, it propagates the scores up the tree, allowing the initial game state to be evaluated based on potential future moves.
 
 ## Algorithm Steps
 **Generate Possible Moves:** Identify all possible moves from the current state.
